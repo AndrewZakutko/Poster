@@ -3,5 +3,8 @@
     background-color: #329DFF;
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
-    padding: 20px 200px;
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

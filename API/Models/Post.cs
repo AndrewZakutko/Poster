@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace API.Models
 {
@@ -6,15 +7,12 @@ namespace API.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Title { get; set; }
-        public string SubTitle { get; set; }
-        public string AuthorName { get; set; }
-        public string Information { get; set; }
-        public string Type { get; set; }
-        public string Status { get; set; }
-        public string? PhotoUrl { get; set; }
+        public string Author { get; set; }
+        public string Content { get; set; }
+        public string? ImageUrl { get; set; }
+        [NotMapped]
+        public string[] Urls { get; set; }
         public string? VideoUrl { get; set; }
-        public DateTime? PublishedAt { get; set; }
-        public DateTime? EditedAt { get; set; }
+        public DateTime? PablishedAt { get; set; }
     }
 }

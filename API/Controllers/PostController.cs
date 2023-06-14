@@ -12,10 +12,19 @@ namespace API.Controllers
             _postRepository = postRepository;
         }
 
-        [HttpGet("list")]
-        public ICollection<Post> GetAll()
+        [HttpGet("{username}")]
+        public ICollection<Post> GetAll(string username)
         {
-            return _postRepository.GetAll();
+            return _postRepository.GetPosts(username);
+        }
+
+        [HttpPost("create")]
+        public async Task<IActionResult> Create(Post post) 
+        {
+            var result = await _postRepository.CreateNewsPost(post);
+
+            if(result) return Ok();
+            else return BadRequest();
         }
     }
 }

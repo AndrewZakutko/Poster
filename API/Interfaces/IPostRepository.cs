@@ -4,6 +4,7 @@ namespace API.Interfaces
 {
     public interface IPostRepository
     {
-       ICollection<Post> GetAll();
+        ICollection<Post> GetPosts(string username);
+        Task<bool> CreateNewsPost(Post post);
     }
 }

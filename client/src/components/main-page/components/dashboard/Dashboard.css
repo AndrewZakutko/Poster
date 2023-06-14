@@ -1,0 +1,157 @@
+a {
+    color: white !important; 
+    cursor: pointer !important;
+}
+
+.dashboard {
+    width: 100%;
+    background-color: #329DFF;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    padding: 0 200px;
+}
+
+.dashboard-navbar {
+    height: 75px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.divider {
+    padding: 0 !important;
+}
+
+.ui.header:last-child {
+    color: white !important;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    display: block;
+    user-select: none;
+    cursor: pointer;
+}
+
+.ui.dividing.header {
+    color: white !important;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    display: block;
+    user-select: none;
+    cursor: pointer;
+}
+
+.dashboard-navbar-title {
+    display: inline-block;
+}
+
+.dashboard-navbar-first-item {
+    margin-left: 150px;
+    display: inline-block;
+}
+
+.dashboard-navbar-item {
+    margin-left: 25px;
+    display: inline-block;
+}
+
+.dashboard-navbar-last-item {
+    float: right;
+}
+
+.email {
+    float: right;
+}
+
+.dashboard-image {
+    border-radius: 20px;
+}
+
+.modal {
+    padding: 5px;
+}
+
+.wrapper {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: white;
+}
+
+.modal-header {
+    margin: 0 !important;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(#329DFF, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.modal-btn {
+    margin-right: 105px;
+    margin-bottom: 20px !important;
+}
+
+.form-btns {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.form-btns .ui.button {
+    color: black;
+    transition: 0.7s;
+}
+
+.form-btns .ui.button:last-child {
+    margin-left: 5px;
+}
+
+.form-btns .ui.button:hover {
+    color: white;
+    background-color: #329DFF;
+}
+
+.ui.modal.transition.visible.active.modal {
+    border-radius: 10px;
+    background-color: #329DFF;
+}
+
+.ui.modal.transition.visible.active.modal .content {
+    background-color: #329DFF;
+}
+
+.ui.modal.transition.visible.active.modal .content .ui.form.modal-form {
+    padding: 0px 20px 0px 20px;
+}
+
+.error-message {
+    color: red;
+}
+
+.additional-information {
+    margin-top: 5px;
+}
+
+.additional-information a {
+    transition: 0.7s;
+}
+
+.additional-information a:hover {
+    color: black !important; 
+}
+
+.ui.medium.inverted.button {
+    transition: 0.7s;
+}
+
+.ui.icon.button {
+    transition: 0.7s;
+}
+
+.ui.image.label {
+    background-color: #329DFF !important;
+    font-size: 16px;
+}

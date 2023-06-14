@@ -1,0 +1,165 @@
+.workspacePage {
+    min-height: 100vh;
+}
+
+.workspacePage .workspacePage-header {
+    font-size: 44px;
+    text-align: center;
+    background: -webkit-linear-gradient(#329DFF, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.workspacePage .posts-management-wrapper {
+    padding: 0 200px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.workspacePage .posts-management-wrapper .chats-list {
+    width: 300px;
+    max-width: 300px;
+    padding: 10px;
+    flex-grow: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.workspacePage .posts-management-wrapper .chats-list-header, .posts-management-header {
+    text-align: center;
+    background: -webkit-linear-gradient(#329DFF, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.workspacePage .posts-management-wrapper .chats-list .accordion.ui .title {
+    padding: 0;
+    text-align: end;
+}
+
+.workspacePage .posts-management-wrapper .chats-list .accordion.ui .content.active .ui.form .ui.button {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #000;
+    color: #000;
+    transition: 0.7s;
+}
+
+.workspacePage .posts-management-wrapper .chats-list .ui.blue.message, .ui.red.message {
+    text-align: center;
+}
+
+.workspacePage .posts-management-wrapper .chats-list .accordion.ui .content.active .ui.form .ui.button:hover {
+    border-color: #329DFF;
+    background-color: #329DFF;
+    color: white;
+}
+
+.workspacePage .posts-management-wrapper .ui.list .item {
+    padding: 5px;
+}
+
+.workspacePage .posts-management-wrapper .ui.list .item .remove.icon {
+    padding-right: 2px;
+    transition: 0.7s;
+}
+
+.workspacePage .posts-management-wrapper .ui.list .item .remove.icon:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.workspacePage .posts-management-wrapper .ui.list .item .content a {
+    font-size: 20px;
+    color: black !important;
+}
+
+.workspacePage .posts-management-wrapper .ui.list .item .content a:hover {
+    color: #329DFF;
+}
+
+.workspacePage .posts-management-wrapper .ui.list .item .telegram.plane.icon {
+    font-size: 25px;
+    color: #329DFF;
+}
+
+.workspacePage .posts-management-wrapper .posts-management {
+    padding: 10px;
+    margin-left: 20px;
+    flex-grow: 9;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.workspacePage .posts-management-wrapper .posts-management .posts-management-steps .posts-management-steps-btns {
+    margin-top: 10px;
+}
+
+.workspacePage .posts-management-wrapper .posts-management .posts-management-steps .posts-management-steps-btns .ui.button {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #000;
+    color: #000;
+    transition: 0.7s;
+}
+
+.workspacePage .posts-management-wrapper .posts-management .posts-management-steps .posts-management-steps-content .confirm-adding-btn {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #000;
+    color: #000;
+    transition: 0.7s;
+}
+
+.workspacePage .posts-management-wrapper .posts-management .posts-management-steps .posts-management-steps-content .confirm-adding-btn:hover {
+    border-color: #329DFF;
+    background-color: #329DFF;
+    color: white;
+}
+
+.workspacePage .posts-management-wrapper .posts-management .posts-management-steps .posts-management-steps-btns {
+    float: right;
+}
+
+.workspacePage .posts-management-wrapper .posts-management .posts-management-steps .posts-management-steps-btns .ui.button:hover {
+    border-color: #329DFF;
+    background-color: #329DFF;
+    color: white;
+}
+
+.workspacePage .posts {
+    padding: 20px 200px;
+}
+
+.workspacePage .posts .posts-header {
+    font-size: 44px;
+    text-align: center;
+    background: -webkit-linear-gradient(#329DFF, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.posts-management-steps-content .ui.form .field .upload-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posts-management-steps-content .ui.form .field .upload-container .upload.icon, .icon {
+    margin-left: 10px;
+    font-size: 25px;
+    transition: 0.7s;
+}
+
+.posts-management-steps-content .ui.form .field .upload-container .upload.icon:hover {
+    color: #329DFF;
+    cursor: pointer;
+}
+
+.posts-management-steps-content .ui.form .ui.active.text.loader {
+    margin: 40px 0;
+}

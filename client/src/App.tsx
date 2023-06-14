@@ -1,25 +1,19 @@
-import React, { useEffect, useState } from 'react';
 import './App.css';
-import axios from 'axios';
-import Dashboard from './components/nav-bar/dashboard/Dashboard';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './components/main-page/MainPage';
 import Footer from './components/footer/Footer';
+import WorkspacePage from './components/workspace-page/WorkspacePage';
 
 function App() {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    axios.get('https://localhost:5001/api/post/list')
-      .then(response => {
-        setPosts(response.data);
-      });
-  }, []);
-
   return (
     <>
-      <Dashboard></Dashboard>
-      <MainPage></MainPage>
-      <Footer></Footer>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/workspace" element={<WorkspacePage />}/>
+      </Routes>
+    </Router>
+    <Footer />
     </>
   );
 }
